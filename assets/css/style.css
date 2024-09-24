@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #e9edc9;
+    height: 250vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#centralizado {
+    text-align: center;
+    color: white;
+}
+
+#justificado {
+    text-align: justify;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    background: url('/assets/css/img/fundo.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+}
+.menu img {
+    width: 20%;
+    height: auto;
+    border-radius: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    gap: 20px; 
+    overflow: hidden;
+    gap: 30px;
+}
+.menu nav ul li {
+    background: rgba(0, 0, 0, 0.60);
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.menu nav ul li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 100px;
+}
+
+.quem-somos {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.quem-somos h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: normal;
+    color: #555 !important;
+    margin-bottom: 10px;  
+}
+
+.quem-somos h2 {
+    font-size: 1.9em;
+    text-align: center;
+    font-weight: normal;
+    color: #555 !important; 
+    margin-bottom: 20px;
+}
+
+
+.quem-somos ul {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.quem-somos ul li {
+    margin: 10px 0;
+    color: #555;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.quem-somos a {
+    display: inline-block;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.quem-somos a:hover {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+    transform: translateY(-3px);
+}
+
+.oque-mei {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.oque-mei h1 {
+    font-size: 2.5em;
+    color: #333 !important;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.oque-mei h2 {
+    font-size: 1.5em;
+    color: #333 !important;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.oque-mei iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.rodape {
+    background-color: #f1f1f1; 
+    color: #333; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 50px; 
+    border-top: 1px solid #ccc; 
+    font-size: 1.3em;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .menu nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu img {
+        width: 30%;
+    }
+    .quem-somos, .oque-mei {
+        padding: 20px;
+    }
+    .quem-somos h1, .oque-mei h1 {
+        font-size: 2em;
+    }
+    .quem-somos h2, .oque-mei h2 {
+        font-size: 1.5em;
+    }
+    .rodape {
+        height: 38vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu img {
+        width: 40%;
+    }
+    .menu nav ul {
+        gap: 10px;
+    }
+    .quem-somos, .oque-mei {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .quem-somos h1, .oque-mei h1 {
+        font-size: 1.5em;
+    }
+    .quem-somos h2, .oque-mei h2 {
+        font-size: 1.2em;
+    }
+    .quem-somos ul li {
+        font-size: 1em;
+    }
+    .rodape {
+        height: 38vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu img {
+        width: 50%;
+    }
+    .menu nav ul {
+        gap: 5px;
+    }
+    .menu nav ul li {
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .menu nav ul li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .quem-somos, .oque-mei {
+        padding: 10px;
+    }
+    .quem-somos h1, .oque-mei h1 {
+        font-size: 1.2em;
+    }
+    .quem-somos h2, .oque-mei h2 {
+        font-size: 1em;
+    }
+    .quem-somos ul li {
+        font-size: 0.9em;
+    }
+    .quem-somos a, .oque-mei a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .rodape {
+        height: 38vh;
+    }
+}

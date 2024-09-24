@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="assets/css/img/logo.png" type="image/x-icon">
+    
+    <title>MEIMundo</title>
+</head>
+<body>
+    <header class="menu">
+        <img src="/assets/css/img/logo.png">
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#oque-mei">O que é MEI</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMDR2x8Q85P1al5nJgXumxhB5-pUYg6ZQm5hPI4-3W__ansg/viewform">Cadastre-se aqui</a></li>
+                <li><a href="https://www.gov.br/pt-br/servicos/emitir-das-para-pagamento-de-tributos-do-mei">Emita seu DAS</a></li>
+                <li><a href="https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais">Consulte as pendências</a></li>
+                <li><a href="https://www.gov.br/pt-br/servicos/parcelar-imposto-mei">Regularize seu MEI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quem-somos">
+        <section id="quem-somos"></section>
+        <h1 id="centralizado">QUEM SOMOS</h1>
+        <h2 id="centralizado">Está querendo ser um microempreendedor individual? Deixa que o MEIMundo facilita! No MEIMundo nós simplificamos:</h2>
+        <ul class="servicos">
+            <li>A criação do seu MEI</li>
+            <li>A emissão do seu DAS</li>
+            <li>A constatação das suas pendências</li>
+            <li>Dar baixa no seu MEI</li>
+            <li>Regularizando o seu MEI</li>
+        </ul>
+        <h2 id="centralizado">Nosso intuito é reduzir a complexidade de ter um negócio, utilizando meios simples e práticos, proporcionando, deste modo, a melhor experiência para os nossos clientes</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMDR2x8Q85P1al5nJgXumxhB5-pUYg6ZQm5hPI4-3W__ansg/viewform">Cadastre-se aqui</a>
+    </div>
+
+    <div class="oque-mei">
+        <section id="oque-mei"></section>
+        <h1 id="centralizado">O que é MEI</h1>
+        <h2 id="justificado">O MEI é a pessoa que trabalha como pequeno empresário ou pequena empresária de forma individual e, ao se formalizar, irá conquistar uma série de benefícios para facilitar o caminho ao sucesso. Abaixo está um vídeo com mais informações.</h2>
+        <iframe width="1280" height="500" src="https://www.youtube.com/embed/y7OVwLCd0ag?si=OR6dhxdV6t77LPYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <div class="rodape">
+        <footer>
+            &copy; 2024 MEIMundo. Todos os direitos reservados.
+        </footer>  
+    </div>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
